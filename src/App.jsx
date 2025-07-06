@@ -1,6 +1,8 @@
 import macarrao from '../src/assets/macarrao.png'
 import coracao from '../src/assets/coracao.png'
 import estrela from '../src/assets/estrela.png'
+import salada from '../src/assets/salada.png'
+import tortaa from '../src/assets/tortaa.png'
 import './App.css'
 import { Clock } from '@phosphor-icons/react'
 
@@ -71,7 +73,7 @@ function App() {
             <div class=" cursor-pointer  max-w-sm flex max-auto">
               <div class=" overflow-hidden  bg-gray-900 transform transition duration-500 hover:scale-105 hover:shadow-lg">
                 <div class="relative aspect-[4/3] overflow-hidden">
-                  <img src={macarrao} alt=""  />
+                  <img src={tortaa} alt=""  />
 
                   <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
 
@@ -80,7 +82,7 @@ function App() {
                   </button>
 
                   <div class="absolute top-3 left-3 text-white text-sm font-medium px-3 py-1 rounded-full bg-[#AE1143]">
-                    Massas
+                    Sobremesas
                   </div>
 
                   <div class="absolute bottom-3 left-3 flex items-center gap-1 bg-black/50 backdrop-blur-sm rounded-lg px-2 py-1">
@@ -91,11 +93,11 @@ function App() {
 
                 <div class="p-6">
                   <h3 class="text-xl font-bold text-[#FAFAFA] mb-2 hover:text-[#C11357] transition-colors">
-                    Pasta Cremosa com Cogumelos
+                    Bolo de Chocolate Decadente
                   </h3>
 
                   <p class="text-gray-400 text-sm mb-4 line-clamp-2">
-                    Uma deliciosa pasta cremosa com cogumelos frescos e ervas aromáticas. Perfeita para um jantar especial.
+                   Um bolo de chocolate úmido e rico, coberto com ganache sedosa e frutas vermelhas frescas.
                   </p>
 
                   <div class="flex items-center justify-between mb-4 ">
@@ -120,7 +122,7 @@ function App() {
             <div class=" cursor-pointer  max-w-sm flex ">
               <div class=" overflow-hidden  bg-gray-900 transform transition duration-500 hover:scale-105 hover:shadow-lg">
                 <div class="relative aspect-[4/3] overflow-hidden">
-                  <img src={macarrao} alt="" />
+                  <img src={salada} alt="" />
 
                   <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
 
@@ -129,7 +131,7 @@ function App() {
                   </button>
 
                   <div class="absolute top-3 left-3 text-white text-sm font-medium px-3 py-1 rounded-full bg-[#AE1143]">
-                    Massas
+                    Saladas
                   </div>
 
                   <div class="absolute bottom-3 left-3 flex items-center gap-1 bg-black/50 backdrop-blur-sm rounded-lg px-2 py-1">
@@ -140,11 +142,11 @@ function App() {
 
                 <div class="p-6">
                   <h3 class="text-xl font-bold text-[#FAFAFA] mb-2 hover:text-[#C11357] transition-colors">
-                    Pasta Cremosa com Cogumelos
+                    Salada Mediterranean Fresh
                   </h3>
 
                   <p class="text-gray-400 text-sm mb-4 line-clamp-2">
-                    Uma deliciosa pasta cremosa com cogumelos frescos e ervas aromáticas. Perfeita para um jantar especial.
+                    Salada fresca e colorida com vegetais crocantes, abacate e um molho mediterrâneo especial.
                   </p>
 
                   <div class="flex items-center justify-between mb-4 ">
