@@ -1,4 +1,3 @@
-import { CookingPot, Heart, MagnifyingGlass, Star, User } from 'phosphor-react'
 import './App.css'
 
 function App() {
@@ -55,7 +54,3 @@ function App() {
 
       </div>
     </header>
-  )
-}
-
-export default App
