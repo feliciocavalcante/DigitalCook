@@ -5,7 +5,7 @@ function App() {
 
   return (
     <header className='flex flex-col w-full h-screen'>
-      <div className="flex w-full h-12 bg-black justify-between p-4 items-center">
+      <div className="flex w-full h-16 bg-black justify-between p-4 items-center ">
 
         <div className="flex gap-2 justify-center items-center">
           <CookingPot size={33} color="#ffffff" weight="bold" className='bg-amber-400 p-1 rounded-md' />
@@ -15,11 +15,10 @@ function App() {
           </div>
         </div>
 
-n
-        <div className="flex gap-3 items-center">
+        <div className="flex gap-3 items-center border-1 border-white h-7 p-3 rounded-2xl">
 
-          <MagnifyingGlass size={20} color="#ffffff" weight="bold" />
-          <input className='border-1 border-white justify-center text text-center text-white w-100 h-7 rounded-2xl' type="search" name="" id="" />
+          <MagnifyingGlass size={18} color="#ffffff" weight="bold" />
+          <input className='border-1 border-white justify-center text text-white w-100 h-7 rounded-2xl outline-none border-none' type="search" name="" id="" />
 
         </div>
 
@@ -29,7 +28,7 @@ n
         </div>
 
       </div>
-      <div className=" flex-col w-full h-full bg-[url('https://blog.consumer.com.br/wp-content/uploads/2020/11/culin%C3%A1ria-regional-brasileira.jpg')] bg-cover justify-center items-center flex gap-5 ">
+      <div className=" flex-col w-full h-full bg-[url('https://blog.consumer.com.br/wp-content/uploads/2020/11/culin%C3%A1ria-regional-brasileira.jpg')] opacity-90 bg-cover justify-center items-center flex gap-5 ">
 
         <div className="flex items-center justify-center bg-amber-400 w-40 h-6 gap-1 rounded-2xl">
           <Star size={13} color="#b1023f" weight="bold" />
