@@ -1,4 +1,4 @@
-import { Cake, Clock, FishSimple, ForkKnife, Horse, Martini, Pizza } from 'phosphor-react'
+import { Cake, Clock, FishSimple, ForkKnife, Horse, Lock, Martini, Pizza } from 'phosphor-react'
 import { CookingPot, Heart, MagnifyingGlass, Star, User } from 'phosphor-react'
 import culinaria from '../src/assets/culinaria.png'
 import salada from '../src/assets/salada.png'
@@ -7,6 +7,7 @@ import macarrao from '../src/assets/macarrao.png'
 import coracao from '../src/assets/coracao.png'
 import estrela from '../src/assets/estrela.png'
 import './App.css'
+import BotaoMenu from './components/Menu'
 
 function App() {
   return (
@@ -250,77 +251,93 @@ function App() {
             </div>
           </div>
         </div>
-        
+
       </section>
 
       {/* parte do Felicio */}
+
+
+      {/* parte do Guto */}
 
       <section className='flex flex-col justify-center  bg-[#101010] text-white'>
         <div className='text-3xl font-bold flex flex-col items-center'>
           <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold text-[#FAFAFA] mb-2 flex justify-center items-center gap-2'>Explote por  <span className='text-[#FE9A00]'>Categorias</span></h1>
         </div>
         <div className='mb-6'>
-         <p className='text-[#FAFAFA] text-[25px] text-center flex justify-center items-center opacity-70'>Encontre exatamente o que você está procurando navegando pelas nossas <br /> categorias</p>
+          <p className='text-[#FAFAFA] text-[25px] text-center flex justify-center items-center opacity-70'>Encontre exatamente o que você está procurando navegando pelas nossas <br /> categorias</p>
         </div>
 
 
-        <div className='grid grid-cols-4 gap-4'>
-          <button className='flex flex-col items-center p-4 bg-[#0E0E0E] rounded-xl border border-gray-400 shadow-md hover:bg-gray-100 transition'>
-            <ForkKnife size={32} color="#f9f0f0" className='bg-[#F5582E] rounded-md' />
-            <span className='text-sm font-semibold text-white'>Massas</span>
-            <span className='text-xs text-gray-500'>150+</span>
-          </button>
+        <div className='grid grid-cols-4 gap-4 mx-auto'>
+          <BotaoMenu title="Massas" span="+150" icon={<ForkKnife size={32} color="#f9f0f0" className='bg-[#F5582E] rounded-md' />} />
 
-          <button className='flex flex-col items-center p-4 bg-[#0E0E0E] rounded-xl border border-gray-400 shadow-md hover:bg-gray-100 transition'>
-            <Cake size={32} color="#f9f0f0" className='bg-[#C94CD5] rounded-md' />
-            <span className='text-sm font-semibold text-white'>Sobremesas</span>
-            <span className='text-xs text-gray-500'>200+</span>
-          </button>
+          <BotaoMenu title="Sobremesas" span="+1" icon={<Cake size={32} color="#f9f0f0" className='bg-[#C94CD5] rounded-md' />} />
 
-          <button className='flex flex-col items-center p-4 bg-[#0E0E0E] rounded-xl border border-gray-400 shadow-md hover:bg-gray-100 transition'>
-            <FishSimple size={32} color="#f9f0f0" className='bg-[#11C075] rounded-md' />
-            <span className='text-sm font-semibold text-white'>Saladas</span>
-            <span className='text-xs text-gray-500'>120+</span>
-          </button>
+          <BotaoMenu title="Saladas" span="+1" icon={<FishSimple size={32} color="#f9f0f0" className='bg-[#11C075] rounded-md' />} />
 
-          <button className='flex flex-col items-center p-4 bg-[#0E0E0E] rounded-xl border border-gray-400 shadow-md hover:bg-gray-100 transition'>
-            <Pizza size={32} color="#f9f0f0" className='bg-[#F78712] rounded-md' />
-            <span className='text-sm font-semibold text-white'>Pizzas</span>
-            <span className='text-xs text-gray-500'>80+</span>
-          </button>
+          <BotaoMenu title="Pizzas" span="+1" icon={<Pizza size={32} color="#f9f0f0" className='bg-[#F78712] rounded-md' />} />
 
-          <button className='flex flex-col items-center p-4 bg-[#0E0E0E] rounded-xl border border-gray-400 shadow-md hover:bg-gray-100 transition'>
-            <FishSimple size={32} color="#f9f0f0" className='bg-blue-500 rounded-md' />
-            <span className='text-sm font-semibold text-white'>Frutos do mar</span>
-            <span className='text-xs text-gray-500'>90+</span>
-          </button>
+          <BotaoMenu title="Frutos do mar" span="+1" icon={<FishSimple size={32} color="#f9f0f0" className='bg-blue-500 rounded-md' />} />
 
-          <button className='flex flex-col items-center p-4 bg-[#0E0E0E] rounded-xl border border-gray-400 shadow-md hover:bg-gray-100 transition'>
-            <Horse size={32} color="#cadec9" weight="thin" className='bg-[#E71E62] rounded-md' />
-            <span className='text-sm font-semibold text-white'>Carnes</span>
-            <span className='text-xs text-gray-500'>160+</span>
-          </button>
+          <BotaoMenu title="Carnes" span="+1" icon={<Horse size={32} color="#cadec9" weight="thin" className='bg-[#E71E62] rounded-md' />} />
 
-          <button className='flex flex-col items-center p-4 bg-[#0E0E0E] rounded-xl border border-gray-400 shadow-md hover:bg-gray-100 transition'>
-            <Martini size={32} color="#f9f0f0" className='bg-[#E46209] rounded-md' />
-            <span className='text-sm font-semibold text-white'>Bebidas</span>
-            <span className='text-xs text-gray-500'>70+</span>
-          </button>
+          <BotaoMenu title="Bebidas" span="+1" icon={<Martini size={32} color="#f9f0f0" className='bg-[#E46209] rounded-md' />} />
 
-          <button className='flex flex-col items-center p-4 bg-[#0E0E0E] rounded-xl border border-gray-400 shadow-md hover:bg-gray-100 transition'>
-            <FishSimple size={32} color="#f9f0f0" className='bg-blue-500 rounded-md' />
-            <span className='text-sm font-semibold text-white'>Gelados</span>
-            <span className='text-xs text-gray-500'>50+</span>
-          </button>
+          <BotaoMenu title="Gelados" span="+1" icon={<FishSimple size={32} color="#f9f0f0" className='bg-blue-500 rounded-md' />} />
         </div>
 
         <button className='text-[#FE9A00] flex justify-center items-center p-4 bg-[#0E0E0E] rounded-xl  shadow-md'>Ver todas as Categoria</button>
       </section>
 
+      {/* parte do Guto */}
+
+
+
       {/* Parte do Célio */}
 
 
       {/* Parte do Célio */}
+
+      <hr />
+      <h1>ola mundo</h1>
+      <hr />
+      <main>
+        <form className='flex flex-col items-center border justify-center rounded-2xl p-6 w-full shadow-md min-h-screen'>
+          <h1>Login DigitalCook</h1>
+          <div>
+            <input
+              className='border rounded-md p-2 mb-3 text-sm'
+              type="email"
+              placeholder='Usuario'
+            />
+            <User size={20} />
+          </div>
+          <div>
+            <input
+              className='border rounded-md p-2 mb-3 text-sm'
+              type="password"
+              placeholder='Senha'
+            />
+            <Lock size={20} />
+          </div>
+          <div>
+            <label>
+              <input type="checkbox" name="" id="" />
+              <span>lembrar senha</span>
+            </label>
+            <a href="">Esqueci minha senha</a>
+          </div>
+
+          <button type="submit">Login</button>
+          
+          <div>
+            <p>Não tem uma conta?
+              <a href="/cadastro" className='hover:underline'>Cadastre-se</a>
+            </p>
+          </div>
+        </form>
+      </main>
+
 
     </>
 
