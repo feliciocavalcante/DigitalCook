@@ -243,7 +243,7 @@ function App() {
                     </div>
                   </div>
 
-                  <button class="w-full bg-[#FE9A00] hover:bg-[#FE9A00] text-white font-medium py-3 px-4 rounded-lg transition-colors cursor-pointer">
+                  <button  class="w-full bg-[#FE9A00] hover:bg-[#FE9A00] text-white font-medium py-3 px-4 rounded-lg transition-colors cursor-pointer">
                     Ver Receita
                   </button>
                 </div>

@@ -16,6 +16,18 @@ function App() {
     navigate("/");
   }
 
+  function handleReceita1() {
+    navigate("/Receita1");
+  }
+
+  function handleReceita2() {
+    navigate("/Receita2");
+  }
+
+  function handleReceita3() {
+    navigate("/Receita3");
+  }
+
   return (
     <>
       <header className="flex flex-col w-full h-screen ">
@@ -153,7 +165,7 @@ function App() {
                     </div>
                   </div>
 
-                  <button class="w-full bg-[#FE9A00] hover:bg-[#C11380] text-white font-medium py-3 px-4 rounded-lg transition-colors cursor-pointer">
+                  <button onClick={handleReceita2} class="w-full bg-[#FE9A00] hover:bg-[#C11380] text-white font-medium py-3 px-4 rounded-lg transition-colors cursor-pointer">
                     Ver Receita
                   </button>
                 </div>
@@ -202,7 +214,7 @@ function App() {
                     </div>
                   </div>
 
-                  <button class="w-full bg-[#FE9A00] hover:bg-[#C11380] text-white font-medium py-3 px-4 rounded-lg transition-colors cursor-pointer">
+                  <button onClick={handleReceita1} class="w-full bg-[#FE9A00] hover:bg-[#C11380] text-white font-medium py-3 px-4 rounded-lg transition-colors cursor-pointer">
                     Ver Receita
                   </button>
                 </div>
@@ -251,7 +263,7 @@ function App() {
                     </div>
                   </div>
 
-                  <button class="w-full bg-[#FE9A00] hover:bg-[#C11380] text-white font-medium py-3 px-4 rounded-lg transition-colors cursor-pointer">
+                  <button onClick={handleReceita3} class="w-full bg-[#FE9A00] hover:bg-[#C11380] text-white font-medium py-3 px-4 rounded-lg transition-colors cursor-pointer">
                     Ver Receita
                   </button>
                 </div>
