@@ -5,7 +5,7 @@ function Receita2 () {
    
     let navigate = useNavigate();
       function handleHome() {
-        navigate("/menu");
+        navigate("/");
       }
 
     return (

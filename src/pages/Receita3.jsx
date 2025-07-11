@@ -4,7 +4,7 @@ import salada from '../assets/salada.png'
 function Receita3() {
     let navigate = useNavigate();
     function handleHome() {
-        navigate("/menu");
+        navigate("/");
     }
     return (
         <>
@@ -19,7 +19,7 @@ function Receita3() {
                 Queijo feta: Quer manter a dieta sem laticínios? Substitua o queijo feta por outra forma de proteína, como alguns ovos cozidos ou uma lata de atum, ou um punhado de nozes torradas e picadas.
                 O Molho: Eu criei um molho simples para acompanhar toda esta salada com azeite extravirgem, vinagre de vinho branco, suco de limão fresco, salsa fresca picada e flocos de pimenta vermelha. Adoro a simplicidade e o equilíbrio de sabores, mas há algumas coisas a serem observadas aqui. Recomendo fortemente o uso de suco de limão fresco para obter o melhor sabor possível; se você não gosta de pimenta, pode reduzir os flocos de pimenta vermelha ou ajustar a gosto. Use seu azeite extravirgem favorito ou confira nosso ranking das melhores marcas de azeite .</p>
 
-            <button onClick={handleHome}>Voltar</button>
+            <button onClick={handleHome}>Home</button>
         </>
     )
 }
