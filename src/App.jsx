@@ -16,6 +16,10 @@ function App() {
     navigate("/");
   }
 
+  function handleLogin() {
+    navigate("/Login");
+  }
+
   function handleReceita1() {
     navigate("/Receita1");
   }
@@ -88,7 +92,7 @@ function App() {
               <button className="bg-amber-600 px-5 py-2 rounded-md text-white cursor-pointer transform hover:scale-105 transition-transform">
                 Explorar Receitas
               </button>
-              <button className="bg-gray-800/75 px-5 py-2 rounded-md text-white cursor-pointer transform hover:scale-105 transition-transform">
+              <button  className="bg-gray-800/75 px-5 py-2 rounded-md text-white cursor-pointer transform hover:scale-105 transition-transform">
                 Ver Categorias
               </button>
             </div>
