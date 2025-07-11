@@ -8,8 +8,13 @@ import coracao from '../src/assets/coracao.png'
 import estrela from '../src/assets/estrela.png'
 import './App.css'
 import BotaoMenu from './components/Menu'
+import { useNavigate } from 'react-router-dom'
 
 function App() {
+  let navigate = useNavigate();
+  function handleLogin() {
+    navigate("/");
+  }
 
   return (
     <>
@@ -35,7 +40,7 @@ function App() {
 
           <div className="flex gap-8 p-2">
             <Heart size={22} color="#ffffff" weight="bold" className="cursor-pointer transform hover:scale-110 transition-transform" />
-            <button>
+            <button onClick={handleLogin}>
               <User size={22} color="#ffffff" weight="bold" className="cursor-pointer transform hover:scale-110 transition-transform" />
             </button>
           </div>

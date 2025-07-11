@@ -1,3 +1,5 @@
+import { Lock, User } from "phosphor-react";
+
 function LoginPage() {
     return(
 <main>
