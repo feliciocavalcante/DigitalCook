@@ -10,12 +10,11 @@ import './App.css'
 import BotaoMenu from './components/Menu'
 
 function App() {
-
   return (
     <>
-      <header className="flex flex-col w-full h-screen ">
+      <header className="flex flex-col w-full h-screen">
 
-        <div className="flex w-full h-16 bg-black justify-between p-4 items-center ">
+        <div className="flex w-full h-16 bg-black justify-between p-4 items-center">
           <div className="flex gap-2 justify-center items-center">
             <CookingPot size={33} color="#ffffff" weight="bold" className="bg-amber-400 p-1 rounded-md" />
             <div className="flex flex-col">
@@ -35,9 +34,7 @@ function App() {
 
           <div className="flex gap-8 p-2">
             <Heart size={22} color="#ffffff" weight="bold" className="cursor-pointer transform hover:scale-110 transition-transform" />
-            <button>
-              <User size={22} color="#ffffff" weight="bold" className="cursor-pointer transform hover:scale-110 transition-transform" />
-            </button>
+            <User size={22} color="#ffffff" weight="bold" className="cursor-pointer transform hover:scale-110 transition-transform" />
           </div>
         </div>
 
@@ -197,7 +194,7 @@ function App() {
                     </div>
                   </div>
 
-                  <button class="w-full bg-[#FE9A00] hover:bg-[#C11380] text-white font-medium py-3 px-4 rounded-lg transition-colors cursor-pointer">
+                  <button class="w-full bg-[#FE9A00] hover:bg-[#FE9A00] text-white font-medium py-3 px-4 rounded-lg transition-colors cursor-pointer">
                     Ver Receita
                   </button>
                 </div>
@@ -246,7 +243,7 @@ function App() {
                     </div>
                   </div>
 
-                  <button class="w-full bg-[#FE9A00] hover:bg-[#C11380] text-white font-medium py-3 px-4 rounded-lg transition-colors cursor-pointer">
+                  <button class="w-full bg-[#FE9A00] hover:bg-[#FE9A00] text-white font-medium py-3 px-4 rounded-lg transition-colors cursor-pointer">
                     Ver Receita
                   </button>
                 </div>
@@ -286,142 +283,26 @@ function App() {
 
           <BotaoMenu title="Bebidas" span="+1" icon={<Martini size={32} color="#f9f0f0" className='bg-[#E46209] rounded-md' />} />
 
-
-          <button className='flex flex-col items-center p-4 bg-[#0E0E0E] rounded-xl border border-gray-400 shadow-md hover:bg-gray-100 transition '>
-            <FishSimple size={32} color="#f9f0f0" className='bg-blue-500 rounded-md' />
-            <span className='text-sm font-semibold text-white'>Gelados</span>
-            <span className='text-xs text-gray-500'>50+</span>
-          </button>
+          <BotaoMenu title="Gelados" span="+1" icon={<FishSimple size={32} color="#f9f0f0" className='bg-blue-500 rounded-md' />} />
         </div>
 
-        <button className='text-[#FE9A00] cursor-pointer flex justify-center items-center p-4 bg-[#101010] rounded-xl  shadow-md'>Ver todas as Categoria</button>
+        <button className='text-[#FE9A00] flex justify-center items-center p-4 bg-[#0E0E0E] rounded-xl  shadow-md'>Ver todas as Categoria</button>
       </section>
 
       {/* parte do Guto */}
 
 
-      <footer className="bg-[#101015] text-gray-300">
-        <div className="container mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="space-y-4">
-              <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-[#FE9A00] rounded-lg flex items-center justify-center">
-                  <CookingPot size={24} color="#ffffff" weight="bold" />
-                </div>
-                <div>
-                  <h3 className="text-[#FE9A00] font-bold text-lg">DigitalCook</h3>
-                  <p className="text-xs text-gray-400">App de Receitas</p>
-                </div>
-              </div>
-              <p className="text-sm text-gray-400 leading-relaxed">
-                Transforme sua cozinha em um laboratório culinário. Descubra, compartilhe e saboreie as melhores receitas.
-              </p>
-              <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-[#FE9A00] text-sm">
-                  Instagram
-                </a>
-                <a href="#" className="text-gray-400 hover:text-[#FE9A00] text-sm">
-                  Twitter
-                </a>
-                <a href="#" className="text-gray-400 hover:text-[#FE9A00] text-sm">
-                  Facebook
-                </a>
-              </div>
-            </div>
-
-            <div className="space-y-4">
-              <h4 className="text-white font-semibold text-lg">Navegação</h4>
-              <ul className="space-y-2">
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-[#FE9A00] text-sm block">
-                    Início
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-[#FE9A00] text-sm block">
-                    Receitas
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-[#FE9A00] text-sm block">
-                    Categorias
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-[#FE9A00] text-sm block">
-                    Favoritos
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-[#FE9A00] text-sm block">
-                    Perfil
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="space-y-4">
-              <h4 className="text-white font-semibold text-lg">Populares</h4>
-              <ul className="space-y-2">
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-[#FE9A00] text-sm block">
-                    Massas
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-[#FE9A00] text-sm block">
-                    Sobremesas
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-[#FE9A00] text-sm block">
-                    Saladas
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-[#FE9A00] text-sm block">
-                    Frutos do Mar
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-[#FE9A00] text-sm block">
-                    Carnes
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="space-y-4">
-              <h4 className="text-white font-semibold text-lg">Newsletter</h4>
-              <p className="text-sm text-gray-400">Receba as melhores receitas diretamente no seu email.</p>
-              <div className="space-y-3">
-                <input
-                  type="email"
-                  placeholder="Seu email"
-                  className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-pink-400"
-                />
-                <button className="cursor-pointer w-full bg-pink-600 hover:bg-pink-700 text-white font-medium py-2 px-4 rounded-lg">
-                  Inscrever-se
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="border-t border-gray-800">
-          <div className="container mx-auto px-4 py-6">
-            <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-              <p className="text-sm text-gray-400">© 2024 DigitalCook. Todos os direitos reservados.</p>
-              <p className="text-sm text-gray-400">Feito com ❤️ para amantes da culinária</p>
-            </div>
-          </div>
-        </div>
-      </footer>
 
       {/* Parte do Célio */}
 
 
       {/* Parte do Célio */}
+
+      <hr />
+      <h1>ola mundo</h1>
+      <hr />
+      
+
     </>
 
   )
