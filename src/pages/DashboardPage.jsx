@@ -10,7 +10,6 @@ import './App.css'
 import BotaoMenu from './components/Menu'
 
 function App() {
-
   return (
     <>
       <header className="flex flex-col w-full h-screen">
@@ -35,9 +34,7 @@ function App() {
 
           <div className="flex gap-8 p-2">
             <Heart size={22} color="#ffffff" weight="bold" className="cursor-pointer transform hover:scale-110 transition-transform" />
-            <button>
-              <User size={22} color="#ffffff" weight="bold" className="cursor-pointer transform hover:scale-110 transition-transform" />
-            </button>
+            <User size={22} color="#ffffff" weight="bold" className="cursor-pointer transform hover:scale-110 transition-transform" />
           </div>
         </div>
 
@@ -300,6 +297,12 @@ function App() {
 
 
       {/* Parte do Célio */}
+
+      <hr />
+      <h1>ola mundo</h1>
+      <hr />
+      
+
     </>
 
   )
