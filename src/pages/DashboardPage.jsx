@@ -269,7 +269,7 @@ function App() {
 
 
         <div className='grid grid-cols-4 gap-4 mx-auto'>
-          <BotaoMenu title="Massas" span="+150" icon={<ForkKnife size={32} color="#f9f0f0" className='bg-[#F5582E] rounded-md' />} />
+          <BotaoMenu title="Massas" span="+150" icon={<ForkKnife size={32} color="#f9f0f0" className='bg-[#F5582E] rounded-md ' />} />
 
           <BotaoMenu title="Sobremesas" span="+1" icon={<Cake size={32} color="#f9f0f0" className='bg-[#C94CD5] rounded-md' />} />
 
@@ -286,7 +286,7 @@ function App() {
           <BotaoMenu title="Gelados" span="+1" icon={<FishSimple size={32} color="#f9f0f0" className='bg-blue-500 rounded-md' />} />
         </div>
 
-        <button className='text-[#FE9A00] flex justify-center items-center p-4 bg-[#0E0E0E] rounded-xl  shadow-md'>Ver todas as Categoria</button>
+        <button className='text-[#FE9A00]  flex justify-center items-center p-4 bg-[#0E0E0E] rounded-xl  shadow-md'>Ver todas as Categoria</button>
       </section>
 
       {/* parte do Guto */}
