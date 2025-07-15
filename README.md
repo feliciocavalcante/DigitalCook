@@ -6,7 +6,7 @@
 
 ## 🔗 Deploy
 
-👉 [Clique aqui para ver o projeto em funcionamento](https://digital-recipes-palette.vercel.app)
+👉 [Clique aqui para ver o projeto em funcionamento](https://digital-cook-git-main-feliciocavalcantes-projects.vercel.app/)
 
 ---
 
